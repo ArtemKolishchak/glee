@@ -1,0 +1,82 @@
+.hero__items {
+  min-height: 820px;
+  height: 820px;
+  padding-top: 100px;
+  background-color: $accent-color;
+}
+
+.hero__item-inner {
+  display: flex;
+}
+
+.hero__content {
+  margin-right: 60px;
+  padding-top: 115px;
+  padding-left: 300px;
+}
+
+.hero__title {
+  max-width: 470px;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 72px;
+  line-height: 1;
+  @extend %rubik-500;
+  text-transform: uppercase;
+  color: #243f4d;
+}
+
+.hero__text {
+  max-width: 370px;
+  width: 100%;
+  margin-bottom: 40px;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.hero__btn {
+  padding: 15px 20px 15px 30px;
+
+  & svg {
+    margin-left: 50px;
+  }
+
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: flex;
+  margin-bottom: 45px;
+  list-style: none;
+  transform: translateX(-50%);
+
+  & li:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  & button {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    font-size: 10px;
+    @extend %rubik-500;
+    color: #243f4d;
+    background-color: rgba(#ffffff, 0.3);
+    border: none;
+    border-radius: 50%;
+    transition: background-color 0.3s ease-out 0s;
+    cursor: pointer;
+  }
+
+  & button:hover {
+
+  }
+
+  & li.slick-active button {
+    background-color: #ffffff;
+  }
+
+}
+

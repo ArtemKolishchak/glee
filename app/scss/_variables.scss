@@ -1,0 +1,60 @@
+$accent-color: #fcd7b6;
+$primary-color:#a3bbc8;
+
+$title-text-color: #191919;
+
+$primary-text-color: #436372;
+$secondary-text-color: #585858;
+
+$text-color-1: #243f4d;
+$text-color-2: #414141;
+
+$text-color-3: #8b8b8b;
+$text-color-4: #262626;
+$text-color-5: #222933;
+$text-color-6: #1f2044;
+$text-color-7: #7b7b7b;
+$text-color-8: #234969;
+
+$background-color-3: #f8f8f8;
+
+%dmsans-400 {
+  font-family: 'DMSans-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%dmsans-500 {
+  font-family: 'DMSans-Medium', sans-serif;
+  font-weight: 500;
+}
+
+%dmsans-700 {
+  font-family: 'DMSans-Bold', sans-serif;
+  font-weight: 700;
+  
+}
+
+%rubik-300 {
+  font-family: 'Rubik-Light', sans-serif;
+  font-weight: 300;
+}
+
+%rubik-400 {
+  font-family: 'Rubik-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%rubik-500 {
+  font-family: 'Rubik-Medium', sans-serif;
+  font-weight: 500;
+}
+
+%rubik-600 {
+  font-family: 'Rubik-SemiBold', sans-serif;
+  font-weight: 600;
+}
+
+%rubik-700 {
+  font-family: 'Rubik-Bold', sans-serif;
+  font-weight: 700;
+}

@@ -1,0 +1,53 @@
+.service__list {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba($accent-color, 0.2);
+}
+
+.service__item {
+  position: relative;
+  width: 33.333%;
+  padding: 45px 150px 40px 225px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    display: block;
+    width: 55px;
+    height: 55px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translate(-25%, -35%);
+  }
+
+  &--support::before {
+    background-image: url('../images/icons/service-icons/support-icon.svg');
+  }
+
+  &--delivery::before {
+    background-image: url('../images/icons/service-icons/delivery-icon.svg');
+  }
+
+  &--payment-secure::before {
+    background-image: url('../images/icons/service-icons/payment-secure-icon.svg');
+  }
+
+  &:not(:last-child) {
+    border-right: 1px solid rgba(36, 63, 77, 0.10);
+  }
+}
+
+.service__title {
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 1.5;
+  @extend %dmsans-700;
+  color: #414141;
+}
+
+.service__text {
+  @extend %dmsans-400;
+  line-height: 1.5;
+}

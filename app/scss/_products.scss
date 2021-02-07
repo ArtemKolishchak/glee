@@ -1,0 +1,149 @@
+.products {
+  padding-top: 60px;
+  padding-bottom: 185px;
+
+  &__title {
+    margin-bottom: 15px;
+  }
+
+  &__filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 75px;
+  }
+
+  &__filter-btn {
+    padding: 0;
+    font-size: 16px;
+    line-height: 1;
+    @extend %dmsans-700;
+    color: #8b8b8b;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s linear;
+  }
+
+  &__filter:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__filter-btn:focus {
+    outline-color: $accent-color;
+  }
+
+  &__filter-btn:hover,
+  &-control-active {
+    color: $title-text-color;
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+  }
+
+  &__item {
+    position: relative;
+    max-width: 270px;
+    width: 100%;
+    margin-right: 30px;
+    margin-bottom: 45px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+
+    img {
+      transition: transform 0.5s;
+    }
+
+    &:hover img {
+      transform: scale(1.05);
+    }
+
+  }
+
+  &__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 265px;
+  }
+
+  &__item-content {
+    padding: 25px 15px;
+    margin-top: auto;
+  }
+
+  &__name {
+    margin-bottom: 15px;
+    @extend %dmsans-500;
+    color: #243f4d;
+    transition: color 0.3s;
+
+    &:focus {
+      outline-color: $accent-color;
+    }
+
+    &:hover {
+      color: $accent-color;
+    }
+  }
+
+  &__price {
+    display: block;
+    @extend %dmsans-700;
+    color: $primary-color;
+  }
+
+  &__group-btn {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    z-index: 2;
+    width: 100%;
+    opacity: 0;
+    text-align: center;
+    transform: translate(-50%, -55%);
+    transition: opacity  0.5s;
+  }
+
+  &__btn {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    line-height: 50px;
+    text-align: center;     
+    background-color:#ffffff;
+    border: none;
+    border-radius: 50%;
+    transition: background-color 0.5s,
+                fill 0.5s;
+
+
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+
+    &:focus {
+      outline-color: $accent-color;
+    }
+
+    &:hover {
+      background-color: $primary-color;
+    }
+
+    &:hover path {
+      fill: #ffffff;
+    }
+
+  }
+
+  &__item:hover .products__group-btn {
+    opacity: 1;
+  }
+
+}
+

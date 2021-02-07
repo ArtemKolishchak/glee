@@ -1,0 +1,161 @@
+.header {
+  padding-top: 45px;
+  padding-bottom: 45px;
+
+  &--fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 15px 0;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.7);
+  }
+  
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: block;
+  max-width: 300px;
+  width: 100%;
+
+  &:focus{
+    outline-color: $accent-color;
+  }
+
+}
+
+.menu {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+
+  &__item:not(:last-child) {
+    margin-right: 35px;
+  }
+
+  &__link {
+    font-size: 15px;
+    @extend %rubik-500;
+    color: $primary-text-color;
+    transition: color 0.3s;
+    cursor: pointer;
+
+    &:focus {
+      outline-color: $accent-color;
+    }
+
+    &:hover,
+    &:active {
+      color: $accent-color;
+    }
+
+    &--dropdown::after {
+      content: "+";
+      margin-left: 5px;
+    }
+
+  }
+
+}
+
+.menu-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__button {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    transition: background-color 0.5s,
+                fill 0.5s;
+
+    &--search {
+      background-color: rgba($primary-color, 0.2);
+    }
+
+    &--hamburger-menu {
+      background-color: $primary-color;
+    }
+
+    &--search:hover,
+    &--hamburger-menu:hover {
+      background-color: $accent-color;
+    }
+
+    &--search:hover path {
+      fill: #ffffff;
+    }
+
+    & svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+  }
+
+}
+
+.menu-btn__group{
+  display: flex;
+  justify-content: space-around;
+  margin: 0 20px;
+  padding: 10px 45px;
+  text-align: center;
+  background-color: $accent-color;
+  border-radius: 50px;
+
+  &-divider {
+    margin: auto 25px;
+    width: 1px;
+    height: 32px;
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+    
+  &-link {
+    position: relative;
+    display: inline-block;
+    padding-top: 5px;
+    text-align: center;
+    transition: fill 0.5s;
+
+    &:hover path {
+      fill: #ffffff;
+    }
+
+    &:hover .menu-btn__count {
+      color: $accent-color;
+      transform: scale(1.5);
+    }
+  }
+
+}
+
+.menu-btn__count{
+  position: absolute;
+  top: 0;
+  right: -10px;
+  width: 16px;
+  height: 16px;
+  font-size: 10px;
+  line-height: 16px;
+  @extend %dmsans-400;
+  text-align: center;
+  color: #243f4d;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transition: color 0.5s,
+              transform 0.5s;
+}

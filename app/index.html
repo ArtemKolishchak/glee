@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glee</title>
+  <link href="images/favicon.ico" type="image/x-icon" rel="shortcut icon">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container-lg">
+
+      <nav class="navbar">
+  
+        <a class="logo" href="#">
+          <img class="logo__image" src="images/logo.png" alt="Logo">
+        </a>
+  
+        <ul class="menu">
+          <li class="menu__item">
+            <a class="menu__link menu__link--dropdown" href="#">Home</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">About</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Services</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link menu__link--dropdown" href="#">Pages</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">News</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Contact</a>
+          </li>
+        </ul>
+
+        <div class="menu-btn">
+
+          <button href="#" class="menu-btn__button menu-btn__button--search">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15.28" height="15.281" viewbox="0 0 15.28 15.281">
+              <path fill="#243f4d" fill-rule="evenodd"
+                d="M1547.7,72.076a0.617,0.617,0,0,1,.75.485,2.583,2.583,0,0,0,.78,1.489,3.036,3.036,0,0,0,1.49.777,0.636,0.636,0,0,1,.49.743,0.649,0.649,0,0,1-.72.515,4.21,4.21,0,0,1-2.14-1.13,4.164,4.164,0,0,1-1.13-2.136A0.6,0.6,0,0,1,1547.7,72.076ZM1550.98,66a6.267,6.267,0,0,1,6.28,6.257,6.136,6.136,0,0,1-.57,2.6l2.34,2.036c1.7,1.746.74,3.266,0.29,3.717-0.42.454-1.99,1.414-3.73-.292l-2.06-2.35A6.261,6.261,0,1,1,1550.98,66Zm5.55,13.517a1.352,1.352,0,0,0,1.88.226,1.313,1.313,0,0,0-.23-1.874l-2.16-1.88a6.236,6.236,0,0,1-1.37,1.34Zm-5.55-2.312a4.948,4.948,0,1,0-4.97-4.948A4.963,4.963,0,0,0,1550.98,77.2Z"
+                transform="translate(-1544.72 -66)" />
+            </svg>
+            <span class="sr-only">Search Button</span>
+          </button>
+
+          <div class="menu-btn__group">
+            <a href="#" class="menu-btn__group-link menu-btn__group-link--heart">
+              <svg xmlns="http://www.w3.org/2000/svg" width="17.87" height="15.531" viewbox="0 0 17.87 15.531">
+                <path fill="#243f4d" fill-rule="evenodd"
+                  d="M1648.91,86.245a0.731,0.731,0,0,1-.28-0.056c-0.35-.15-8.65-3.749-8.65-10.76a28.181,28.181,0,0,0,13.05-4.707,4.817,4.817,0,0,1,4.81,4.684c0,7.034-8.29,10.634-8.65,10.783A0.7,0.7,0,0,1,1648.91,86.245Zm-4.11-14.138a3.427,3.427,0,0,0-3.41,3.346c0,5.407,6.13,8.662,7.52,9.334,1.4-.672,7.52-3.93,7.52-9.358a3.406,3.406,0,0,0-6.81.024,0.709,0.709,0,0,1-.71.669h0a0.694,0.694,0,0,1-.7-0.669A3.427,3.427,0,0,0,1644.8,72.106Z"
+                  transform="translate(-1639.97 -70.719)" />
+              </svg>
+              <span class="menu-btn__count">0</span>
+              <span class="sr-only">Like Button</span>
+            </a>
+            <div class="menu-btn__group-divider"></div>
+            <a href="#" class="menu-btn__group-link menu-btn__group-link--shoping-cart">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18.94" height="16.969" viewbox="0 0 18.94 16.969">
+                <path fill="#243f4d" fill-rule="evenodd"
+                  d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z"
+                  transform="translate(-1716 -69)" />
+              </svg>
+
+              <span class="menu-btn__count">0</span>
+              <span class="sr-only">Shopping Cart Button</span>
+            </a>
+          </div>
+
+          <button href="#" class="menu-btn__button menu-btn__button--hamburger-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20.03" height="20.031" viewbox="0 0 20.03 20.031">
+              <path fill="#ffffff" fill-rule="evenodd"
+                d="M1813.15,67.881a2.146,2.146,0,1,1,2.14-2.145A2.145,2.145,0,0,1,1813.15,67.881Zm0,7.869a2.146,2.146,0,1,1,2.14-2.147A2.146,2.146,0,0,1,1813.15,75.75Zm0,7.868a2.146,2.146,0,1,1,2.14-2.146A2.145,2.145,0,0,1,1813.15,83.618Zm7.86-15.737a2.146,2.146,0,1,1,2.15-2.145A2.143,2.143,0,0,1,1821.01,67.881Zm0,7.869a2.146,2.146,0,1,1,2.15-2.147A2.144,2.144,0,0,1,1821.01,75.75Zm0,7.868a2.146,2.146,0,1,1,2.15-2.146A2.143,2.143,0,0,1,1821.01,83.618Zm7.87-15.737a2.146,2.146,0,1,1,2.15-2.145A2.143,2.143,0,0,1,1828.88,67.881Zm0,7.869a2.146,2.146,0,1,1,2.15-2.147A2.144,2.144,0,0,1,1828.88,75.75Zm0,7.868a2.146,2.146,0,1,1,2.15-2.146A2.143,2.143,0,0,1,1828.88,83.618Z"
+                transform="translate(-1811 -63.594)" />
+            </svg>
+            <span class="sr-only">Hamburger Menu Button</span>
+          </button>
+
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container-lg">
+        <div class="hero__items">
+
+          <div class="hero__item">
+            <div class="hero__item-inner">
+
+              <div class="hero__content">
+                <p class="hero__title">Smart and Trendy</p>
+              
+                <div class="hero__text">
+                  <p>Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+                </div>
+                <a class="btn hero__btn" href="#">Shop Now 
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="9" viewbox="0 0 22 9">
+                    <path fill="#ffffff" fill-rule="evenodd"
+                      d="M535.3,654.472h16.948l-0.1,2.857a0.292,0.292,0,0,0,0,.41l0.172,0.172a0.28,0.28,0,0,0,.2.086,0.285,0.285,0,0,0,.2-0.084l4.193-4.211A0.292,0.292,0,0,0,557,653.5a0.283,0.283,0,0,0-.084-0.2l-4.193-4.213a0.289,0.289,0,0,0-.407,0l-0.172.173a0.287,0.287,0,0,0-.084.2,0.278,0.278,0,0,0,.084.2l0.113,2.865H535.292a0.3,0.3,0,0,0-.292.295v1.37A0.292,0.292,0,0,0,535.3,654.472Z"
+                      transform="translate(-535 -649)" />
+                  </svg>
+                </a> 
+              </div>
+              <img src="images/hero/hero-slide-1.png" alt="Lorem">
+            </div>
+          </div>
+
+          <div class="hero__item">
+            <div class="hero__item-inner">
+          
+              <div class="hero__content">
+                <p class="hero__title">Smart and Trendy</p>
+          
+                <div class="hero__text">
+                  <p>Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+                </div>
+                <a class="btn hero__btn" href="#">Shop Now
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="9" viewbox="0 0 22 9">
+                    <path fill="#ffffff" fill-rule="evenodd"
+                      d="M535.3,654.472h16.948l-0.1,2.857a0.292,0.292,0,0,0,0,.41l0.172,0.172a0.28,0.28,0,0,0,.2.086,0.285,0.285,0,0,0,.2-0.084l4.193-4.211A0.292,0.292,0,0,0,557,653.5a0.283,0.283,0,0,0-.084-0.2l-4.193-4.213a0.289,0.289,0,0,0-.407,0l-0.172.173a0.287,0.287,0,0,0-.084.2,0.278,0.278,0,0,0,.084.2l0.113,2.865H535.292a0.3,0.3,0,0,0-.292.295v1.37A0.292,0.292,0,0,0,535.3,654.472Z"
+                      transform="translate(-535 -649)" />
+                  </svg>
+                </a>
+              </div>
+              <img src="images/hero/hero-slide-2.png" alt="Lorem">
+            </div>
+          </div>
+
+          <div class="hero__item">
+            <div class="hero__item-inner">
+          
+              <div class="hero__content">
+                <p class="hero__title">Smart and Trendy</p>
+          
+                <div class="hero__text">
+                  <p>Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+                </div>
+                <a class="btn hero__btn" href="#">Shop Now
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="9" viewbox="0 0 22 9">
+                    <path fill="#ffffff" fill-rule="evenodd"
+                      d="M535.3,654.472h16.948l-0.1,2.857a0.292,0.292,0,0,0,0,.41l0.172,0.172a0.28,0.28,0,0,0,.2.086,0.285,0.285,0,0,0,.2-0.084l4.193-4.211A0.292,0.292,0,0,0,557,653.5a0.283,0.283,0,0,0-.084-0.2l-4.193-4.213a0.289,0.289,0,0,0-.407,0l-0.172.173a0.287,0.287,0,0,0-.084.2,0.278,0.278,0,0,0,.084.2l0.113,2.865H535.292a0.3,0.3,0,0,0-.292.295v1.37A0.292,0.292,0,0,0,535.3,654.472Z"
+                      transform="translate(-535 -649)" />
+                  </svg>
+                </a>
+              </div>
+              <img src="images/hero/hero-slide-2.png" alt="Sofa">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="service">
+      <div class="container-lg">
+        <ul class="service__list">
+
+          <li class="service__item service__item--support">
+            <p class="service__title">Support 24/7.</p>
+            <div class="service__text">
+              <p>
+                Contact us 24 hours a day, 7 days a week.
+              </p>
+            </div>
+          </li>
+
+          <li class="service__item service__item--delivery">
+            <p class="service__title">Delivery.</p>
+            <div class="service__text">
+              <p>
+                Free shipping on all US order. 
+              </p>
+            </div>
+          </li>
+
+          <li class="service__item service__item--payment-secure">
+            <p class="service__title">100% Payment secure.</p>
+            <div class="service__text">
+              <p>
+                We ensure secure payment with PEV.
+              </p>
+            </div>
+          </li>
+        </ul>
+        
+      </div>
+    </div>
+
+    <section class="products">
+      <div class="container-md">
+        <h2 class="title products__title">Products of the week</h2>
+
+        <ul class="products__filters">
+          <li class="products__filter">
+            <button class="products__filter-btn" data-filter="all">All</button>
+          </li>
+          <li class="products__filter">
+            <button class="products__filter-btn" data-filter=".furnitures">Furnitures</button>
+          </li>
+          <li class="products__filter">
+            <button class="products__filter-btn" data-filter=".chairs">Chairs</button>
+          </li>
+          <li class="products__filter">
+            <button class="products__filter-btn" data-filter=".lighting">Lighting</button>
+          </li>
+          <li class="products__filter">
+            <button class="products__filter-btn" data-filter=".decor">Decor</button>
+          </li>
+        </ul>
+                
+        <ul class="products__items">
+        
+          <li class="products__item mix all furnitures decor">
+            <div class="products__image">
+              <img src="images/product-of-the-week/products-of-the-week-1.png" alt="Lorem">
+            </div>
+            <div class="products__item-content">
+              <a class="products__name" href="">Wooden radio</a>
+              <span class="products__price">$29.00</span>
+            </div>
+
+            <div class="products__group-btn">
+              <a class="products__btn" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20">
+                  <path fill="#a3bbc8" fill-rule="evenodd"
+                    d="M759.45,1579.8l-4.588-4.59a8.827,8.827,0,0,1-2.651,2.65l4.588,4.59A1.874,1.874,0,0,0,759.45,1579.8Zm-4.45-9.3a7.5,7.5,0,1,0-7.5,7.5A7.5,7.5,0,0,0,755,1570.5Zm-7.5,5.62a5.625,5.625,0,1,1,5.625-5.62A5.628,5.628,0,0,1,747.5,1576.12Zm-4.375-5.62h1.25a3.135,3.135,0,0,1,3.125-3.13v-1.25A4.386,4.386,0,0,0,743.125,1570.5Z"
+                    transform="translate(-740 -1563)" />
+                </svg>
+                <span class="sr-only">Button to Search Page</span>
+              </a>
+              <button class="products__btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewbox="0 0 22 20">
+                  <path fill="#a3bbc8" fill-rule="evenodd"
+                    d="M800.814,1564.63h2.333l3.323,12.04a0.812,0.812,0,0,0,.787.59h10.214a0.821,0.821,0,0,0,.746-0.48l3.717-8.56a0.836,0.836,0,0,0-.068-0.78,0.813,0.813,0,0,0-.678-0.37H809.9a0.82,0.82,0,0,0,0,1.64H819.94l-3.011,6.92h-9.062l-3.323-12.03a0.808,0.808,0,0,0-.787-0.6h-2.943A0.815,0.815,0,0,0,800.814,1564.63Zm5.67,18.37a1.85,1.85,0,1,0-1.845-1.85A1.85,1.85,0,0,0,806.484,1583Zm11.53,0h0.135A1.907,1.907,0,1,0,818.014,1583Z"
+                    transform="translate(-800 -1563)" />
+                </svg>
+                <span class="sr-only">Button Add to Shoping Cart</span>
+              </button>
+              <button class="products__btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewbox="0 0 22 18">
+                  <path fill="#a3bbc8" fill-rule="evenodd"
+                    d="M882.99,1569.82a6.208,6.208,0,0,0-1.849-4.1A5.871,5.871,0,0,0,877,1564c-2.311,0-3.948,1.78-4.827,2.74a2.156,2.156,0,0,1-.156.17l-0.083-.09c-0.8-.92-2.476-2.82-4.938-2.82a5.873,5.873,0,0,0-4.139,1.72,6.208,6.208,0,0,0-1.849,4.1,6.845,6.845,0,0,0,1.271,4.34,29.307,29.307,0,0,0,4.763,4.75c1.705,1.41,3.95,3.09,4.965,3.09,1.032,0,3.269-1.68,4.965-3.09a29.234,29.234,0,0,0,4.746-4.75A6.935,6.935,0,0,0,882.99,1569.82Zm-2.376,3.61a27,27,0,0,1-4.431,4.42c-2.406,2-3.831,2.79-4.172,2.82-0.342-.03-1.77-0.83-4.188-2.84a26.78,26.78,0,0,1-4.437-4.4,5.6,5.6,0,0,1-1.054-3.54,4.807,4.807,0,0,1,4.666-4.57c1.863,0,3.216,1.54,3.943,2.37a1.52,1.52,0,0,0,1.059.76,1.731,1.731,0,0,0,1.151-.81c0.794-.87,2.122-2.32,3.851-2.32a4.807,4.807,0,0,1,4.666,4.57A5.528,5.528,0,0,1,880.614,1573.43Z"
+                    transform="translate(-861 -1564)" />
+                </svg>
+                <span class="sr-only">Button Add Like Product</span>
+              </button>
+            </div>
+          </li>
+
+          <li class="products__item mix all chair lighting">
+            <div class="products__image">
+              <img src="images/product-of-the-week/products-of-the-week-2.png" alt="Lorem">
+            </div>
+          
+            <div class="products__item-content">
+              <a class="products__name" href="">Wooden chair</a>
+              <span class="products__price">$29.00</span>
+            </div>
+          
+            <div class="products__group-btn">
+              <a class="products__btn" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20">
+                  <path fill="#a3bbc8" fill-rule="evenodd"
+                    d="M759.45,1579.8l-4.588-4.59a8.827,8.827,0,0,1-2.651,2.65l4.588,4.59A1.874,1.874,0,0,0,759.45,1579.8Zm-4.45-9.3a7.5,7.5,0,1,0-7.5,7.5A7.5,7.5,0,0,0,755,1570.5Zm-7.5,5.62a5.625,5.625,0,1,1,5.625-5.62A5.628,5.628,0,0,1,747.5,1576.12Zm-4.375-5.62h1.25a3.135,3.135,0,0,1,3.125-3.13v-1.25A4.386,4.386,0,0,0,743.125,1570.5Z"
+                    transform="translate(-740 -1563)" />
+                </svg>
+                <span class="sr-only">Button to Search Page</span>
+              </a>
+              <button class="products__btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewbox="0 0 22 20">
+                  <path fill="#a3bbc8" fill-rule="evenodd"
+                    d="M800.814,1564.63h2.333l3.323,12.04a0.812,0.812,0,0,0,.787.59h10.214a0.821,0.821,0,0,0,.746-0.48l3.717-8.56a0.836,0.836,0,0,0-.068-0.78,0.813,0.813,0,0,0-.678-0.37H809.9a0.82,0.82,0,0,0,0,1.64H819.94l-3.011,6.92h-9.062l-3.323-12.03a0.808,0.808,0,0,0-.787-0.6h-2.943A0.815,0.815,0,0,0,800.814,1564.63Zm5.67,18.37a1.85,1.85,0,1,0-1.845-1.85A1.85,1.85,0,0,0,806.484,1583Zm11.53,0h0.135A1.907,1.907,0,1,0,818.014,1583Z"
+                    transform="translate(-800 -1563)" />
+                </svg>
+                <span class="sr-only">Button Add to Shoping Cart</span>
+              </button>
+              <button class="products__btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewbox="0 0 22 18">
+                  <path fill="#a3bbc8" fill-rule="evenodd"
+                    d="M882.99,1569.82a6.208,6.208,0,0,0-1.849-4.1A5.871,5.871,0,0,0,877,1564c-2.311,0-3.948,1.78-4.827,2.74a2.156,2.156,0,0,1-.156.17l-0.083-.09c-0.8-.92-2.476-2.82-4.938-2.82a5.873,5.873,0,0,0-4.139,1.72,6.208,6.208,0,0,0-1.849,4.1,6.845,6.845,0,0,0,1.271,4.34,29.307,29.307,0,0,0,4.763,4.75c1.705,1.41,3.95,3.09,4.965,3.09,1.032,0,3.269-1.68,4.965-3.09a29.234,29.234,0,0,0,4.746-4.75A6.935,6.935,0,0,0,882.99,1569.82Zm-2.376,3.61a27,27,0,0,1-4.431,4.42c-2.406,2-3.831,2.79-4.172,2.82-0.342-.03-1.77-0.83-4.188-2.84a26.78,26.78,0,0,1-4.437-4.4,5.6,5.6,0,0,1-1.054-3.54,4.807,4.807,0,0,1,4.666-4.57c1.863,0,3.216,1.54,3.943,2.37a1.52,1.52,0,0,0,1.059.76,1.731,1.731,0,0,0,1.151-.81c0.794-.87,2.122-2.32,3.851-2.32a4.807,4.807,0,0,1,4.666,4.57A5.528,5.528,0,0,1,880.614,1573.43Z"
+                    transform="translate(-861 -1564)" />
+                </svg>
+                <span class="sr-only">Button Add Like Product</span>
+              </button>
+            </div>
+          </li>
+
+          <li class="products__item mix all lighting chairs">
+            <div class="products__image">
+              <img src="images/product-of-the-week/products-of-the-week-3.png" alt="Lorem">
+            </div>
+            <div class="products__item-content">
+              <a class="products__name" href="">White chair</a>
+              <span class="products__price">$29.00</span>
+            </div>
+          
+            <div class="products__group-btn">
+              <a class="products__btn" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20">
+                  <path fill="#a3bbc8" fill-rule="evenodd"
+                    d="M759.45,1579.8l-4.588-4.59a8.827,8.827,0,0,1-2.651,2.65l4.588,4.59A1.874,1.874,0,0,0,759.45,1579.8Zm-4.45-9.3a7.5,7.5,0,1,0-7.5,7.5A7.5,7.5,0,0,0,755,1570.5Zm-7.5,5.62a5.625,5.625,0,1,1,5.625-5.62A5.628,5.628,0,0,1,747.5,1576.12Zm-4.375-5.62h1.25a3.135,3.135,0,0,1,3.125-3.13v-1.25A4.386,4.386,0,0,0,743.125,1570.5Z"
+                    transform="translate(-740 -1563)" />
+                </svg>
+                <span class="sr-only">Button to Search Page</span>
+              </a>
+              <button class="products__btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewbox="0 0 22 20">
+                  <path fill="#a3bbc8" fill-rule="evenodd"
+                    d="M800.814,1564.63h2.333l3.323,12.04a0.812,0.812,0,0,0,.787.59h10.214a0.821,0.821,0,0,0,.746-0.48l3.717-8.56a0.836,0.836,0,0,0-.068-0.78,0.813,0.813,0,0,0-.678-0.37H809.9a0.82,0.82,0,0,0,0,1.64H819.94l-3.011,6.92h-9.062l-3.323-12.03a0.808,0.808,0,0,0-.787-0.6h-2.943A0.815,0.815,0,0,0,800.814,1564.63Zm5.67,18.37a1.85,1.85,0,1,0-1.845-1.85A1.85,1.85,0,0,0,806.484,1583Zm11.53,0h0.135A1.907,1.907,0,1,0,818.014,1583Z"
+                    transform="translate(-800 -1563)" />
+                </svg>
+                <span class="sr-only">Button Add to Shoping Cart</span>
+              </button>
+              <button class="products__btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewbox="0 0 22 18">
+                  <path fill="#a3bbc8" fill-rule="evenodd"
+                    d="M882.99,1569.82a6.208,6.208,0,0,0-1.849-4.1A5.871,5.871,0,0,0,877,1564c-2.311,0-3.948,1.78-4.827,2.74a2.156,2.156,0,0,1-.156.17l-0.083-.09c-0.8-.92-2.476-2.82-4.938-2.82a5.873,5.873,0,0,0-4.139,1.72,6.208,6.208,0,0,0-1.849,4.1,6.845,6.845,0,0,0,1.271,4.34,29.307,29.307,0,0,0,4.763,4.75c1.705,1.41,3.95,3.09,4.965,3.09,1.032,0,3.269-1.68,4.965-3.09a29.234,29.234,0,0,0,4.746-4.75A6.935,6.935,0,0,0,882.99,1569.82Zm-2.376,3.61a27,27,0,0,1-4.431,4.42c-2.406,2-3.831,2.79-4.172,2.82-0.342-.03-1.77-0.83-4.188-2.84a26.78,26.78,0,0,1-4.437-4.4,5.6,5.6,0,0,1-1.054-3.54,4.807,4.807,0,0,1,4.666-4.57c1.863,0,3.216,1.54,3.943,2.37a1.52,1.52,0,0,0,1.059.76,1.731,1.731,0,0,0,1.151-.81c0.794-.87,2.122-2.32,3.851-2.32a4.807,4.807,0,0,1,4.666,4.57A5.528,5.528,0,0,1,880.614,1573.43Z"
+                    transform="translate(-861 -1564)" />
+                </svg>
+                <span class="sr-only">Button Add Like Product</span>
+              </button>
+            </div>
+          </li>
+
+          <li class="products__item mix all decor">
+            <div class="products__image">
+              <img src="images/product-of-the-week/products-of-the-week-4.png" alt="Lorem">
+            </div>
+            <div class="products__item-content">
+              <a class="products__name" href="">Retro table</a>
+              <span class="products__price">$29.00</span>
+            </div>
+          
+            <div class="products__group-btn">
+              <a class="products__btn" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20">
+                  <path fill="#a3bbc8" fill-rule="evenodd"
+                    d="M759.45,1579.8l-4.588-4.59a8.827,8.827,0,0,1-2.651,2.65l4.588,4.59A1.874,1.874,0,0,0,759.45,1579.8Zm-4.45-9.3a7.5,7.5,0,1,0-7.5,7.5A7.5,7.5,0,0,0,755,1570.5Zm-7.5,5.62a5.625,5.625,0,1,1,5.625-5.62A5.628,5.628,0,0,1,747.5,1576.12Zm-4.375-5.62h1.25a3.135,3.135,0,0,1,3.125-3.13v-1.25A4.386,4.386,0,0,0,743.125,1570.5Z"
+                    transform="translate(-740 -1563)" />
+                </svg>
+                <span class="sr-only">Button to Search Page</span>
+              </a>
+              <button class="products__btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewbox="0 0 22 20">
+                  <path fill="#a3bbc8" fill-rule="evenodd"
+                    d="M800.814,1564.63h2.333l3.323,12.04a0.812,0.812,0,0,0,.787.59h10.214a0.821,0.821,0,0,0,.746-0.48l3.717-8.56a0.836,0.836,0,0,0-.068-0.78,0.813,0.813,0,0,0-.678-0.37H809.9a0.82,0.82,0,0,0,0,1.64H819.94l-3.011,6.92h-9.062l-3.323-12.03a0.808,0.808,0,0,0-.787-0.6h-2.943A0.815,0.815,0,0,0,800.814,1564.63Zm5.67,18.37a1.85,1.85,0,1,0-1.845-1.85A1.85,1.85,0,0,0,806.484,1583Zm11.53,0h0.135A1.907,1.907,0,1,0,818.014,1583Z"
+                    transform="translate(-800 -1563)" />
+                </svg>
+                <span class="sr-only">Button Add to Shoping Cart</span>
+              </button>
+              <button class="products__btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewbox="0 0 22 18">
+                  <path fill="#a3bbc8" fill-rule="evenodd"
+                    d="M882.99,1569.82a6.208,6.208,0,0,0-1.849-4.1A5.871,5.871,0,0,0,877,1564c-2.311,0-3.948,1.78-4.827,2.74a2.156,2.156,0,0,1-.156.17l-0.083-.09c-0.8-.92-2.476-2.82-4.938-2.82a5.873,5.873,0,0,0-4.139,1.72,6.208,6.208,0,0,0-1.849,4.1,6.845,6.845,0,0,0,1.271,4.34,29.307,29.307,0,0,0,4.763,4.75c1.705,1.41,3.95,3.09,4.965,3.09,1.032,0,3.269-1.68,4.965-3.09a29.234,29.234,0,0,0,4.746-4.75A6.935,6.935,0,0,0,882.99,1569.82Zm-2.376,3.61a27,27,0,0,1-4.431,4.42c-2.406,2-3.831,2.79-4.172,2.82-0.342-.03-1.77-0.83-4.188-2.84a26.78,26.78,0,0,1-4.437-4.4,5.6,5.6,0,0,1-1.054-3.54,4.807,4.807,0,0,1,4.666-4.57c1.863,0,3.216,1.54,3.943,2.37a1.52,1.52,0,0,0,1.059.76,1.731,1.731,0,0,0,1.151-.81c0.794-.87,2.122-2.32,3.851-2.32a4.807,4.807,0,0,1,4.666,4.57A5.528,5.528,0,0,1,880.614,1573.43Z"
+                    transform="translate(-861 -1564)" />
+                </svg>
+                <span class="sr-only">Button Add Like Product</span>
+              </button>
+            </div>
+          </li>
+
+          <li class="products__item mix all furnitures">
+            <div class="products__image">
+              <img src="images/product-of-the-week/products-of-the-week-5.png" alt="Lorem">
+            </div>
+            <div class="products__item-content">
+              <a class="products__name" href="">Wooden radio</a>
+              <span class="products__price">$29.00</span>
+            </div>
+          
+            <div class="products__group-btn">
+              <a class="products__btn" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20">
+                  <path fill="#a3bbc8" fill-rule="evenodd"
+                    d="M759.45,1579.8l-4.588-4.59a8.827,8.827,0,0,1-2.651,2.65l4.588,4.59A1.874,1.874,0,0,0,759.45,1579.8Zm-4.45-9.3a7.5,7.5,0,1,0-7.5,7.5A7.5,7.5,0,0,0,755,1570.5Zm-7.5,5.62a5.625,5.625,0,1,1,5.625-5.62A5.628,5.628,0,0,1,747.5,1576.12Zm-4.375-5.62h1.25a3.135,3.135,0,0,1,3.125-3.13v-1.25A4.386,4.386,0,0,0,743.125,1570.5Z"
+                    transform="translate(-740 -1563)" />
+                </svg>
+                <span class="sr-only">Button to Search Page</span>
+              </a>
+              <button class="products__btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewbox="0 0 22 20">
+                  <path fill="#a3bbc8" fill-rule="evenodd"
+                    d="M800.814,1564.63h2.333l3.323,12.04a0.812,0.812,0,0,0,.787.59h10.214a0.821,0.821,0,0,0,.746-0.48l3.717-8.56a0.836,0.836,0,0,0-.068-0.78,0.813,0.813,0,0,0-.678-0.37H809.9a0.82,0.82,0,0,0,0,1.64H819.94l-3.011,6.92h-9.062l-3.323-12.03a0.808,0.808,0,0,0-.787-0.6h-2.943A0.815,0.815,0,0,0,800.814,1564.63Zm5.67,18.37a1.85,1.85,0,1,0-1.845-1.85A1.85,1.85,0,0,0,806.484,1583Zm11.53,0h0.135A1.907,1.907,0,1,0,818.014,1583Z"
+                    transform="translate(-800 -1563)" />
+                </svg>
+                <span class="sr-only">Button Add to Shoping Cart</span>
+              </button>
+              <button class="products__btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewbox="0 0 22 18">
+                  <path fill="#a3bbc8" fill-rule="evenodd"
+                    d="M882.99,1569.82a6.208,6.208,0,0,0-1.849-4.1A5.871,5.871,0,0,0,877,1564c-2.311,0-3.948,1.78-4.827,2.74a2.156,2.156,0,0,1-.156.17l-0.083-.09c-0.8-.92-2.476-2.82-4.938-2.82a5.873,5.873,0,0,0-4.139,1.72,6.208,6.208,0,0,0-1.849,4.1,6.845,6.845,0,0,0,1.271,4.34,29.307,29.307,0,0,0,4.763,4.75c1.705,1.41,3.95,3.09,4.965,3.09,1.032,0,3.269-1.68,4.965-3.09a29.234,29.234,0,0,0,4.746-4.75A6.935,6.935,0,0,0,882.99,1569.82Zm-2.376,3.61a27,27,0,0,1-4.431,4.42c-2.406,2-3.831,2.79-4.172,2.82-0.342-.03-1.77-0.83-4.188-2.84a26.78,26.78,0,0,1-4.437-4.4,5.6,5.6,0,0,1-1.054-3.54,4.807,4.807,0,0,1,4.666-4.57c1.863,0,3.216,1.54,3.943,2.37a1.52,1.52,0,0,0,1.059.76,1.731,1.731,0,0,0,1.151-.81c0.794-.87,2.122-2.32,3.851-2.32a4.807,4.807,0,0,1,4.666,4.57A5.528,5.528,0,0,1,880.614,1573.43Z"
+                    transform="translate(-861 -1564)" />
+                </svg>
+                <span class="sr-only">Button Add Like Product</span>
+              </button>
+            </div>
+          </li>
+          
+          <li class="products__item mix all chair">
+            <div class="products__image">
+              <img src="images/product-of-the-week/products-of-the-week-6.png" alt="Lorem">
+            </div>
+          
+            <div class="products__item-content">
+              <a class="products__name" href="">Wooden chair</a>
+              <span class="products__price">$29.00</span>
+            </div>
+          
+            <div class="products__group-btn">
+              <a class="products__btn" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20">
+                  <path fill="#a3bbc8" fill-rule="evenodd"
+                    d="M759.45,1579.8l-4.588-4.59a8.827,8.827,0,0,1-2.651,2.65l4.588,4.59A1.874,1.874,0,0,0,759.45,1579.8Zm-4.45-9.3a7.5,7.5,0,1,0-7.5,7.5A7.5,7.5,0,0,0,755,1570.5Zm-7.5,5.62a5.625,5.625,0,1,1,5.625-5.62A5.628,5.628,0,0,1,747.5,1576.12Zm-4.375-5.62h1.25a3.135,3.135,0,0,1,3.125-3.13v-1.25A4.386,4.386,0,0,0,743.125,1570.5Z"
+                    transform="translate(-740 -1563)" />
+                </svg>
+                <span class="sr-only">Button to Search Page</span>
+              </a>
+              <button class="products__btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewbox="0 0 22 20">
+                  <path fill="#a3bbc8" fill-rule="evenodd"
+                    d="M800.814,1564.63h2.333l3.323,12.04a0.812,0.812,0,0,0,.787.59h10.214a0.821,0.821,0,0,0,.746-0.48l3.717-8.56a0.836,0.836,0,0,0-.068-0.78,0.813,0.813,0,0,0-.678-0.37H809.9a0.82,0.82,0,0,0,0,1.64H819.94l-3.011,6.92h-9.062l-3.323-12.03a0.808,0.808,0,0,0-.787-0.6h-2.943A0.815,0.815,0,0,0,800.814,1564.63Zm5.67,18.37a1.85,1.85,0,1,0-1.845-1.85A1.85,1.85,0,0,0,806.484,1583Zm11.53,0h0.135A1.907,1.907,0,1,0,818.014,1583Z"
+                    transform="translate(-800 -1563)" />
+                </svg>
+                <span class="sr-only">Button Add to Shoping Cart</span>
+              </button>
+              <button class="products__btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewbox="0 0 22 18">
+                  <path fill="#a3bbc8" fill-rule="evenodd"
+                    d="M882.99,1569.82a6.208,6.208,0,0,0-1.849-4.1A5.871,5.871,0,0,0,877,1564c-2.311,0-3.948,1.78-4.827,2.74a2.156,2.156,0,0,1-.156.17l-0.083-.09c-0.8-.92-2.476-2.82-4.938-2.82a5.873,5.873,0,0,0-4.139,1.72,6.208,6.208,0,0,0-1.849,4.1,6.845,6.845,0,0,0,1.271,4.34,29.307,29.307,0,0,0,4.763,4.75c1.705,1.41,3.95,3.09,4.965,3.09,1.032,0,3.269-1.68,4.965-3.09a29.234,29.234,0,0,0,4.746-4.75A6.935,6.935,0,0,0,882.99,1569.82Zm-2.376,3.61a27,27,0,0,1-4.431,4.42c-2.406,2-3.831,2.79-4.172,2.82-0.342-.03-1.77-0.83-4.188-2.84a26.78,26.78,0,0,1-4.437-4.4,5.6,5.6,0,0,1-1.054-3.54,4.807,4.807,0,0,1,4.666-4.57c1.863,0,3.216,1.54,3.943,2.37a1.52,1.52,0,0,0,1.059.76,1.731,1.731,0,0,0,1.151-.81c0.794-.87,2.122-2.32,3.851-2.32a4.807,4.807,0,0,1,4.666,4.57A5.528,5.528,0,0,1,880.614,1573.43Z"
+                    transform="translate(-861 -1564)" />
+                </svg>
+                <span class="sr-only">Button Add Like Product</span>
+              </button>
+            </div>
+          </li>
+          
+          <li class="products__item mix all lighting">
+            <div class="products__image">
+              <img src="images/product-of-the-week/products-of-the-week-7.png" alt="Lorem">
+            </div>
+            <div class="products__item-content">
+              <a class="products__name" href="">White chair</a>
+              <span class="products__price">$29.00</span>
+            </div>
+          
+            <div class="products__group-btn">
+              <a class="products__btn" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20">
+                  <path fill="#a3bbc8" fill-rule="evenodd"
+                    d="M759.45,1579.8l-4.588-4.59a8.827,8.827,0,0,1-2.651,2.65l4.588,4.59A1.874,1.874,0,0,0,759.45,1579.8Zm-4.45-9.3a7.5,7.5,0,1,0-7.5,7.5A7.5,7.5,0,0,0,755,1570.5Zm-7.5,5.62a5.625,5.625,0,1,1,5.625-5.62A5.628,5.628,0,0,1,747.5,1576.12Zm-4.375-5.62h1.25a3.135,3.135,0,0,1,3.125-3.13v-1.25A4.386,4.386,0,0,0,743.125,1570.5Z"
+                    transform="translate(-740 -1563)" />
+                </svg>
+                <span class="sr-only">Button to Search Page</span>
+              </a>
+              <button class="products__btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewbox="0 0 22 20">
+                  <path fill="#a3bbc8" fill-rule="evenodd"
+                    d="M800.814,1564.63h2.333l3.323,12.04a0.812,0.812,0,0,0,.787.59h10.214a0.821,0.821,0,0,0,.746-0.48l3.717-8.56a0.836,0.836,0,0,0-.068-0.78,0.813,0.813,0,0,0-.678-0.37H809.9a0.82,0.82,0,0,0,0,1.64H819.94l-3.011,6.92h-9.062l-3.323-12.03a0.808,0.808,0,0,0-.787-0.6h-2.943A0.815,0.815,0,0,0,800.814,1564.63Zm5.67,18.37a1.85,1.85,0,1,0-1.845-1.85A1.85,1.85,0,0,0,806.484,1583Zm11.53,0h0.135A1.907,1.907,0,1,0,818.014,1583Z"
+                    transform="translate(-800 -1563)" />
+                </svg>
+                <span class="sr-only">Button Add to Shoping Cart</span>
+              </button>
+              <button class="products__btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewbox="0 0 22 18">
+                  <path fill="#a3bbc8" fill-rule="evenodd"
+                    d="M882.99,1569.82a6.208,6.208,0,0,0-1.849-4.1A5.871,5.871,0,0,0,877,1564c-2.311,0-3.948,1.78-4.827,2.74a2.156,2.156,0,0,1-.156.17l-0.083-.09c-0.8-.92-2.476-2.82-4.938-2.82a5.873,5.873,0,0,0-4.139,1.72,6.208,6.208,0,0,0-1.849,4.1,6.845,6.845,0,0,0,1.271,4.34,29.307,29.307,0,0,0,4.763,4.75c1.705,1.41,3.95,3.09,4.965,3.09,1.032,0,3.269-1.68,4.965-3.09a29.234,29.234,0,0,0,4.746-4.75A6.935,6.935,0,0,0,882.99,1569.82Zm-2.376,3.61a27,27,0,0,1-4.431,4.42c-2.406,2-3.831,2.79-4.172,2.82-0.342-.03-1.77-0.83-4.188-2.84a26.78,26.78,0,0,1-4.437-4.4,5.6,5.6,0,0,1-1.054-3.54,4.807,4.807,0,0,1,4.666-4.57c1.863,0,3.216,1.54,3.943,2.37a1.52,1.52,0,0,0,1.059.76,1.731,1.731,0,0,0,1.151-.81c0.794-.87,2.122-2.32,3.851-2.32a4.807,4.807,0,0,1,4.666,4.57A5.528,5.528,0,0,1,880.614,1573.43Z"
+                    transform="translate(-861 -1564)" />
+                </svg>
+                <span class="sr-only">Button Add Like Product</span>
+              </button>
+            </div>
+          </li>
+          
+          <li class="products__item mix all decor">
+            <div class="products__image">
+              <img src="images/product-of-the-week/products-of-the-week-8.png" alt="Lorem">
+            </div>
+            <div class="products__item-content">
+              <a class="products__name" href="">Retro table</a>
+              <span class="products__price">$29.00</span>
+            </div>
+          
+            <div class="products__group-btn">
+              <a class="products__btn" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20">
+                  <path fill="#a3bbc8" fill-rule="evenodd"
+                    d="M759.45,1579.8l-4.588-4.59a8.827,8.827,0,0,1-2.651,2.65l4.588,4.59A1.874,1.874,0,0,0,759.45,1579.8Zm-4.45-9.3a7.5,7.5,0,1,0-7.5,7.5A7.5,7.5,0,0,0,755,1570.5Zm-7.5,5.62a5.625,5.625,0,1,1,5.625-5.62A5.628,5.628,0,0,1,747.5,1576.12Zm-4.375-5.62h1.25a3.135,3.135,0,0,1,3.125-3.13v-1.25A4.386,4.386,0,0,0,743.125,1570.5Z"
+                    transform="translate(-740 -1563)" />
+                </svg>
+                <span class="sr-only">Button to Search Page</span>
+              </a>
+              <button class="products__btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewbox="0 0 22 20">
+                  <path fill="#a3bbc8" fill-rule="evenodd"
+                    d="M800.814,1564.63h2.333l3.323,12.04a0.812,0.812,0,0,0,.787.59h10.214a0.821,0.821,0,0,0,.746-0.48l3.717-8.56a0.836,0.836,0,0,0-.068-0.78,0.813,0.813,0,0,0-.678-0.37H809.9a0.82,0.82,0,0,0,0,1.64H819.94l-3.011,6.92h-9.062l-3.323-12.03a0.808,0.808,0,0,0-.787-0.6h-2.943A0.815,0.815,0,0,0,800.814,1564.63Zm5.67,18.37a1.85,1.85,0,1,0-1.845-1.85A1.85,1.85,0,0,0,806.484,1583Zm11.53,0h0.135A1.907,1.907,0,1,0,818.014,1583Z"
+                    transform="translate(-800 -1563)" />
+                </svg>
+                <span class="sr-only">Button Add to Shoping Cart</span>
+              </button>
+              <button class="products__btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewbox="0 0 22 18">
+                  <path fill="#a3bbc8" fill-rule="evenodd"
+                    d="M882.99,1569.82a6.208,6.208,0,0,0-1.849-4.1A5.871,5.871,0,0,0,877,1564c-2.311,0-3.948,1.78-4.827,2.74a2.156,2.156,0,0,1-.156.17l-0.083-.09c-0.8-.92-2.476-2.82-4.938-2.82a5.873,5.873,0,0,0-4.139,1.72,6.208,6.208,0,0,0-1.849,4.1,6.845,6.845,0,0,0,1.271,4.34,29.307,29.307,0,0,0,4.763,4.75c1.705,1.41,3.95,3.09,4.965,3.09,1.032,0,3.269-1.68,4.965-3.09a29.234,29.234,0,0,0,4.746-4.75A6.935,6.935,0,0,0,882.99,1569.82Zm-2.376,3.61a27,27,0,0,1-4.431,4.42c-2.406,2-3.831,2.79-4.172,2.82-0.342-.03-1.77-0.83-4.188-2.84a26.78,26.78,0,0,1-4.437-4.4,5.6,5.6,0,0,1-1.054-3.54,4.807,4.807,0,0,1,4.666-4.57c1.863,0,3.216,1.54,3.943,2.37a1.52,1.52,0,0,0,1.059.76,1.731,1.731,0,0,0,1.151-.81c0.794-.87,2.122-2.32,3.851-2.32a4.807,4.807,0,0,1,4.666,4.57A5.528,5.528,0,0,1,880.614,1573.43Z"
+                    transform="translate(-861 -1564)" />
+                </svg>
+                <span class="sr-only">Button Add Like Product</span>
+              </button>
+            </div>
+          </li>
+        
+        </ul>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container-md">
+      <div class="footer-top">
+
+        <div class="footer-top__item">
+          <a class="logo footer__logo" href="#">
+            <img class="logo__image" src="images/logo.png" alt="Logo">
+          </a>
+          <address class="footer__address">
+            <p><span>Adress: </span> 4772 Wines Lane Houston, TX 77032</p>
+            <p><span>Telephone: </span><a href="tel:+8323475843">+832-347-5843</a></p>
+            <p><span>Email: </span><a href="mailto:contact@Glee.com">contact@Glee.com</a></p>
+          </address>
+        </div>
+
+        <div class="footer-top__item">
+        <p class="footer-top__title">Services</p>
+        <ul class="footer-top__list">
+          <li class="footer-top__list-item">
+            <a class="footer-top__item-link" href="#">About Us</a>
+          </li>
+          <li class="footer-top__list-item">
+            <a class="footer-top__item-link" href="#">Return Policy</a>
+          </li>
+          <li class="footer-top__list-item">
+            <a class="footer-top__item-link" href="#">Our Blog</a>
+          </li>
+          <li class="footer-top__list-item">
+            <a class="footer-top__item-link" href="#">Contact Us</a>
+          </li>
+          <li class="footer-top__list-item">
+            <a class="footer-top__item-link" href="#">About us</a>
+          </li>
+          <li class="footer-top__list-item">
+            <a class="footer-top__item-link" href="#">Term & condition</a>
+          </li>
+        </ul>
+        </div>
+
+        <div class="footer-top__item">
+          <p class="footer-top__title">Account</p>
+          <ul class="footer-top__list">
+            <li class="footer-top__list-item">
+              <a class="footer-top__item-link" href="#">Your Account</a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__item-link" href="#">Checkout</a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__item-link" href="#">Login</a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__item-link" href="#">Register</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-top__item">
+          <p class="footer-top__title">Newsletter</p>
+          <p>Subscribe by our newsletter and get update protidin.</p>
+          <form action="">
+            <label class="sr-only" for="your-email">Emeil Address</label>
+            <input id="your-email" name="your-email" type="email" placeholder="Email address" required>
+            <button class="btn subscribe-btn" type="submit">Subscribe</button>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <div class="footer__copyright">
+          <p>&#169;2020 CopyRight Example. All rights reserved.</p>
+        </div>
+
+        <ul class="footer-bottom-nav">
+          <li class="footer-bottom-nav__item">
+            <a class="footer-bottom-nav__link" href="#">Home</a>
+          </li>
+          <li class="footer-bottom-nav__item">
+            <a class="footer-bottom-nav__link" href="#">About</a>
+          </li>
+          <li class="footer-bottom-nav__item">
+            <a class="footer-bottom-nav__link" href="#">Blog</a>
+          </li>
+          <li class="footer-bottom-nav__item">
+            <a class="footer-bottom-nav__link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="js/main.min.js"></script>
+  
+</body>
+</html>

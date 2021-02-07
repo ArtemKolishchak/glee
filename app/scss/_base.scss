@@ -1,0 +1,58 @@
+body {
+  font-size: 16px;
+  line-height: 1.9;
+  @extend %rubik-400;
+  color: $primary-text-color;
+  background-color: #ffffff;
+}
+
+.container-md {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container-lg {
+  max-width: 1800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.title {
+  font-size: 36px;
+  line-height: 1.5;
+  @extend %dmsans-700;
+  text-align: center;
+  color: $title-text-color;
+}
+
+.btn {
+  display: inline-block;
+  @extend %rubik-500;
+  text-transform: capitalize;
+  color: #ffffff;
+  background-color: $primary-color;
+  border: none;
+  transition: background-color 0.3s;
+
+  &:focus {
+    outline-color: $accent-color;
+  }
+
+  &:hover {
+    background-color: #243f4d;
+  }
+}
